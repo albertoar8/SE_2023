@@ -1,4 +1,7 @@
 function sum(a,b){
     return a+b;
 }
-console.log(sum(2,6));
+
+if(sum(2,4)!=6){
+    throw error
+}
