@@ -1,0 +1,15 @@
+1. Exercise Linux Command (Slide 21)
+
+Create a new folder
+    $mkdir <foldername>
+
+Create a file named file.txt containing “hello world” using cat
+    $vi file.txt
+
+Create another file1.txt with text “my name is Bob” using cat
+    $vi file1.txt
+
+Concatenate file.txt and file1.txt and print them together
+    
+Copy file1.txt to the new folder
+Create an account on GitHub (github.com)
