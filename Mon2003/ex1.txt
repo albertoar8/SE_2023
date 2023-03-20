@@ -1,0 +1,20 @@
+--- 1
+Create an object to hold information of student. It should have properties 
+for name (a string), age (a number), and subject (an array of strings).
+On separate lines (one console.log statement for each), log the 
+student information so it looks like:
+
+David
+Age: 21
+Subjects:
+- Database Fundamental
+- Web Development
+- Artificial Intelligent
+
+
+Jessy
+Age: 21
+Subjects:
+- Network security
+- Advance Network System
+- Big Data
