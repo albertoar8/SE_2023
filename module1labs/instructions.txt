@@ -1,3 +1,8 @@
+{
+    "student":"Alberto"
+    "description":"this is my first attempt on Module 1 SE_2023"
+}
+
 1. Exercise Linux Command (Slide 21)
 2. Exercise HTML Slide 26, 27 => Can use Bootstrap
 3. Exercise CSS Slide 46 (Custom style based on your preference) - try to avoid inline CSS
