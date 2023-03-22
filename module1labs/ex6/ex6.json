@@ -1,0 +1,15 @@
+{
+    "type": "module",
+    "book":{
+        "title":"the book title",
+        "number_of_pages": 150,
+        "description":"this is the description of the book: the book title",
+        "author": "Alberto Armenta"
+    },
+    "book2":{
+        "title":"the book title number 2",
+        "number_of_pages": 150,
+        "description":"this is the description of the book: the book title #2",
+        "author": "Some random dude"
+    }
+}
