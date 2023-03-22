@@ -1,6 +1,6 @@
 {
     "type": "module",
-    "book":{
+    "books":{
         "title":"the book title",
         "number_of_pages": 150,
         "description":"this is the description of the book: the book title",
@@ -13,3 +13,4 @@
         "author": "Some random dude"
     }
 }
+
