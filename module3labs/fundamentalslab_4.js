@@ -1,4 +1,5 @@
-//4. Rewrite this if statement using the ternary/conditional op
+//4. Rewrite this if statement using the ternary/conditional operator '?'
+//Test it with different values for a and b. What does the '+=' do ?
 let a = 2, b = 3; 
 let result = `${a} + ${b} is `; 
 
