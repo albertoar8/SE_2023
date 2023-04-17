@@ -1,5 +1,9 @@
 How and when Meta data in HTML is used? 
+answer: used by bots, browser
 
 Adding video, audio and image ... ?
 
-elements can be referenced with id or name ? see form.html
+elements can be referenced with id or name ? see form.html 
+answer- name for labels in html . id for referencing in js
+
+<article>  for screenreaders ... for blind people for example (semantic tags: header, footer, article.)
