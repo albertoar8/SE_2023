@@ -34,7 +34,7 @@ console.log(currencyOperation(twentyCents,tenCents,"/",5))
 function currencyOperation(float1, float2, operation, decimals) {
   switch (operation) {
     case "+":
-      let addition = float1 + float2;
+      let addition = float1 + float2;// return Math.round((float1+float2)*numOfDecimals)  /  numOfDecimals
       return parseFloat(addition.toFixed(decimals));
     case "-":
       let substraction = float1 - float2;

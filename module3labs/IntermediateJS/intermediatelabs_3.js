@@ -5,7 +5,7 @@
 //    
 /*-----------------------------------------------------------------------------------------*/
 //Global Variables
-const animals = ['Tiger', 'Giraffe'] 
+let animals = ['Tiger', 'Giraffe'] 
 console.log(animals)
 /*-----------------------------------------------------------------------------------------*/
 //Execution
@@ -57,5 +57,11 @@ function findMatchingAnimals(myStringArray,beginsWith){
     }while(lenghtofcomparison>0); //finish the loop if there is no match even in the 1st letter
     return mynewArray;
 }
-    
+
+/* MASTER JASON SOLUTION*/
+function findMatchingAnimals(beginsWith) { 
+    return animals.filter(animal => animal.toLowerCase().startsWith(beginsWith.toLowerCase())) 
+} 
+console.log(findMatchingAnimals('h'))
+
     

@@ -35,16 +35,19 @@ const books = [
 ];
 // a) Write a function getBookTitle(bookId) that uses the find function to return the 
 //    title of the book object with the matching id.
+//NOTES: FIND stops looking when it finds the first matching element.
 //console.log(getBookTitle(4));
 function getBookTitle(bookID){
     let found_by_id=books.find(({id})=>id===bookID); //extract the objects that match the id
-    return found_by_id.title;
+    return found_by_id?.title ? found_by_id.title : "not found";
 }
 // b) Write a function getOldBooks() that uses the filter function to return all
 //    book objects written before 1950.
+//NOTE: Filter returns ALL the matches. as opposed to find which only returns the first match
+
 //console.log(getOldBooks());
 function getOldBooks(){
-    let old_book_objects=books.filter(({year})=>year<=1950);
+    let old_book_objects=books.filter(({year})=>year<=1050);
     return old_book_objects;
 }
 // c) Write a function addGenre() that uses the map function to add a new genre property
@@ -66,10 +69,11 @@ function getTitles(authorInitial){
 //    book with the most recent publication date.
 console.log(latestBook(books));
 function latestBook(arrayOfBookObjects){
-    let yearofpublicationArray=[];
+    let max=1000;
     arrayOfBookObjects.forEach(element => {
-        yearofpublicationArray.push(element.year)
+        if(element.year>max){
+          max=element.year;
+        }
     });
-    let max=Math.max(...yearofpublicationArray); //why the 3 dots ?
     return arrayOfBookObjects.find(({year})=>year===max); //returns the book object with the most recent year
 }

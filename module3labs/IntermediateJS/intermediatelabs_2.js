@@ -18,7 +18,7 @@ function truncate(str,maxLenght){
         for(let i=0;i<maxLenght;i++){
             newstring=newstring+str.split('')[i]
         }
-        return newstring+"...";
+        return newstring+"..."; // or use str.substring(0,maxLenght)+"..."
     }
     return str; //return the same string if it doesnt exceed Max lenght
 }

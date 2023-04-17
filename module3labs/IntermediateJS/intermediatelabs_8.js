@@ -15,11 +15,15 @@ phoneBookDEF.set('Floyd', '0451631091')
 phoneBookABC.set('Caroline','0455223332');
 // d) Write a function printPhoneBook(contacts) that prints the names and 
 //    phone numbers in the given Map
-printPhoneBook(phoneBookABC)
+//printPhoneBook(phoneBookABC)
 function printPhoneBook(phone_book_map){
-    console.log(phone_book_map);
+    //console.log(phone_book_map);
+    for(item of phone_book_map){
+        console.log(item);
+    }
 }
 //e) Combine the contents of the two individual Maps into a single phoneBook Map
 const masterphonebook= new Map([...phoneBookABC, ...phoneBookDEF]);
+
 // f) Print out the full list of names in the combined phone book
 masterphonebook.forEach((value,key)=>console.log(key+" "+value))
