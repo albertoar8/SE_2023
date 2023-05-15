@@ -38,6 +38,6 @@ Student.prototype.toString= function(){
     return `I am a student: ${this.name}, cohort ${this.cohort}`
 }
 const student1 = new Student("Alberto Armenta", 34, "male","Software Engineering");
-const student2 = new Student("Ana O'Brian", 40, "DevOps");
-console.log("student 1: " + student1); //prints person1: [object Object]
-console.log("student 2: " + student2); //prints person1: [object Object]
+const student2 = new Student("Ana O'Brian", 40,"female", "DevOps");
+console.log("student 1: " + student1); //prints student1: [object Object]
+console.log("student 2: " + student2); //prints student2: [object Object]
