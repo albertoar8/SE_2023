@@ -1,0 +1,24 @@
+//Create the following and create a node js app:
+mkdir nodejs-auth-rest-api-mysql
+
+cd nodejs-auth-rest-api-mysql
+
+npm init -y
+
+
+//execute the following commad to install express, etc in to the app
+
+npm install express express-validator mysql body-parser jsonwebtoken bcryptjs cors --save
+
+//create and edit the files: 
+dbConnection.js
+router.js
+server.js
+validation.js
+
+//start the node express js server
+nodemon server.js
+
+//go to the browser and hit 
+
+http://127.0.0.1:3000/api/register
