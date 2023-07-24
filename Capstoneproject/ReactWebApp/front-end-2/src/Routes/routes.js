@@ -7,6 +7,7 @@ import Login from "../Components/Login/Login";
 export const AppRoutes = (props) => {
   return (
     <Routes>
+      <Route path="/" element={<Login {...props} />} />
       <Route path="/dashboard" element={<Dashboard {...props} />} />
       <Route path="/preferences" element={<Preferences {...props} />} />
       <Route path="/login" element={<Login {...props} />} />
