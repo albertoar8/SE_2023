@@ -27,5 +27,7 @@ Here are some questions for the students to cover during their presentations:
 
 
 8. What kinds of React hooks have you used (eg. state, context, effect, navigate)? How?
+
 9. What external tools/libraries have you used (eg. bootstrap/axios/MUI)? How? Why?
+
 10. How might you extend the features of your application in future?

@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  /* This changes all font color inside App component */
+  color: antiquewhite; 
+
 }
 
 .App-logo {
@@ -35,4 +38,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.font-link {
+  font-family: 'Dancing Script', cursive;
 }

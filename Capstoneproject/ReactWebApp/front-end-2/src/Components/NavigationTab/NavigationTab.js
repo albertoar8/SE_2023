@@ -22,9 +22,9 @@ export default function NavigationTab() {
         aria-label="wrapped label tabs example"
         textColor="white"
       >
-        <Tab value="home" label="home page" />
-        <Tab value="recipes" label="recipes" />
-        <Tab value="save" label="save" />
+        <Tab value="home" label="About" />
+        <Tab value="recipes" label="Search" />
+        <Tab value="save" label="Book" />
       </Tabs>
     </Box>
   );
