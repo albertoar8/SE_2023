@@ -22,3 +22,11 @@ nodemon server.js
 //go to the browser and hit 
 
 http://127.0.0.1:3000/api/register
+
+/*---------------------------------*/
+$ docker build -t myfirstimagealberto .
+$ docker build -t myfirstimagealberto/mvc-structure .
+
+//access token docker description:amanteca5918
+dckr_pat_m2MsJeiwYsdEa3Jd9t-TzazeaM8
+

@@ -1,23 +1,30 @@
+require('dotenv').config();
 const createError = require("http-errors");
 const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const indexRouter = require("./router.js");
+const userRouter = require("./routers/userRoutes.js")
+const port = 8080;
 
 const app = express();
+let dbConnect = require("./dbConnection");
+dbConnect.connectMysql()
 app.use(express.json());
+app.use(cors());
 app.use(bodyParser.json());
 app.use(
   bodyParser.urlencoded({
     extended: true,
   })
 );
-app.use(cors());
+
 app.use("/api", indexRouter);
+app.use("/api/user",userRouter);
 // Handling Errors
 app.use((err, req, res, next) => {
-  //console.log(err);
+  console.log(err);
   err.statusCode = err.statusCode || 500;
   err.message = err.message || "Internal Server Error";
   res.status(err.statusCode).json({
@@ -25,4 +32,4 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(3000, () => console.log("Server is running on port 3000"));
+app.listen(port, () => console.log("Server is running on port "+port));

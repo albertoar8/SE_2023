@@ -21,14 +21,23 @@ export default function Recipies() {
         setAPIData(response.data.drinks);
         setloading(false);
       });
+    // axios
+    //   .get("http://localhost:8080/api/user/")
+    //   .then((response) => {
+    //     console.log(response);
+    //   });
   }, []);
 
   return (
     <div>
-      <h1>Cocktail Recipes</h1>
+      <h1 className="font-link">Cocktail Recipes</h1>
       <p>Courtesy of The Cocktail DB API</p>
       <div>
-        {loading ? <CircularProgress /> : <RecipeReviewCard allRecipes={APIData} />}
+        {loading ? (
+          <CircularProgress />
+        ) : (
+          <RecipeReviewCard allRecipes={APIData} />
+        )}
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ const { validationResult } = require("express-validator");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
+
 router.post("/register", signupValidation, (req, res, next) => {
   db.query(
     `SELECT * FROM users WHERE LOWER(email) = LOWER(${db.escape(

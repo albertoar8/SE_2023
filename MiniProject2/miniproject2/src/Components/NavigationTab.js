@@ -5,8 +5,8 @@ import Box from "@mui/material/Box";
 import { useNavigate } from "react-router-dom";
 
 export default function NavigationTab() {
-  const navigate = useNavigate();
-  const [value, setValue] = React.useState("home");
+  const navigate = useNavigate("/home");
+  const [value, setValue] = React.useState("/home");
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -20,6 +20,7 @@ export default function NavigationTab() {
         value={value}
         onChange={handleChange}
         aria-label="wrapped label tabs example"
+        textColor="white"
       >
         <Tab value="home" label="home page" />
         <Tab value="recipes" label="recipes" />
