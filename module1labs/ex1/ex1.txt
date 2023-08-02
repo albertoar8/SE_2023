@@ -1,0 +1,18 @@
+Practice using the commands you learnt to solve the following. 
+
+1. Create a new folder
+$mkdir <folder_name>
+
+2. Create a file named file.txt containing “hello world” using cat
+$vi file.txt
+
+3. Create another file1.txt with text “my name is Bob” using cat
+$vi file1.txt
+
+4. Concatenate file.txt and file1.txt and print them together
+$cat file.txt file1.txt
+
+5. Copy file1.txt to the new folder
+$mv file.txt newfolder
+
+Create an account on GitHub (github.com)

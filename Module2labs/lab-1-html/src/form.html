@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
+  <head> </head>
   <body>
     <header>
       <nav>
         <!-- works like <a href="/index.html">Home</a> -->
-        <a href="/">Home</a>
+        <a href="/lab-1-html/src/index.html">Home 2</a>
       </nav>
     </header>
     <main>
+      <form method="POST" action="http://localhost:3000/profile">
+        <div>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" /><br /><br />
+        </div>
+        <div>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" /><br /><br />
+        </div>
+        <div>
+          <label for="Bradio">Currently studying </label>
+          <input type="radio" name="Bradio" value="Radio" checked /><br /><br />
+        </div>
+        <div>
+          <input type="checkbox" name="vehicle1" value="Bike" />
+          <label for="vehicle1"> I have a bike</label><br />
+          <input type="checkbox" name="vehicle2" value="Car" />
+          <label for="vehicle2"> I have a car</label><br />
+          <input type="checkbox" name="vehicle3" value="Boat" checked />
+          <label for="vehicle3"> I have a boat</label><br /><br />
+        </div>
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
     </main>
     <footer>Copyright 2021 &copy;</footer>
   </body>
