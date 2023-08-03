@@ -1,0 +1,22 @@
+{
+  "name": "module5ex1slide18",
+  "version": "1.0.0",
+  "description": "excersice1_ExpressJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertoar8/SE_2023.git#developlocal"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albertoar8/SE_2023/issues"
+  },
+  "homepage": "https://github.com/albertoar8/SE_2023/tree/developlocal#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
